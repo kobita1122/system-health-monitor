@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>System Health Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>System Health Monitor</h1>
+
+<div class="cards">
+  <div class="card" id="cpu">
+    <h3>CPU Usage</h3>
+    <p><span id="cpuValue">0</span>%</p>
+  </div>
+
+  <div class="card" id="memory">
+    <h3>Memory Usage</h3>
+    <p><span id="memoryValue">0</span>%</p>
+  </div>
+
+  <div class="card" id="disk">
+    <h3>Disk Usage</h3>
+    <p><span id="diskValue">0</span>%</p>
+  </div>
+</div>
+
+<button onclick="refresh()">Refresh Status</button>
+
+<script src="script.js"></script>
+</body>
+</html>
